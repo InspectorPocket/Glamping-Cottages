@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rossendale Holidays</title>
+	<link rel="shortcut icon" href="../img/_logos/logo_icon.ico"  />
+	<link rel="stylesheet" type="text/css" media="all" href="../sass/main.css">
+	<link rel="stylesheet" type="text/css" media="all" href="../sass/media.css">
+	<link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|EB+Garamond|Roboto+Condensed|" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+   
+		$( '#mob-nav' ).click(function() {
+		    if($( '.mob-menu' ).is(":visible")){
+		        $( '.mob-menu' ).hide();
+		    } else{
+		        $( '.mob-menu' ).show();
+		    }
+		    
+		 });
+
+		$( '#mob-nav-close' ).click(function() {
+				$( '.mob-menu' ).hide();
+		 });
+		
+		});
+	</script>
+	<script language="JavaScript" src="../js/gen_validatorv31.js" type="text/javascript"></script>
+
+</head>
+
+<body>
+<!-- NAV -->
+	<div class="mob-menu">
+
+		<button id="mob-nav-close">X</button>
+
+		<a href="../index.html">
+			<div class="logo">
+				<div class="logo-inner">
+					<img src="../img/_icons/alder_icon.svg">
+					<img src="../img/_icons/willow_icon.svg">
+					<img src="../img/_icons/oak_icon.svg">
+				</div>
+				<h3>Home</h3>
+			</div>
+		</a>
+
+		<ul class="ul-mob-menu">
+			<li><a href="../pages/cottages.html">Cottages</a></li>
+			<li><a href="../pages/rooms.html">Rooms</a></li>
+			<li><a href="../pages/glamping.html">Glamping</a></li>
+			<li><a href="../pages/leisure-events.html">Leisure &amp; Events</a></li>
+			<li><a href="../pages/reviews.html">Reviews</a></li>
+			<li><a href="../pages/blog.html">Blog</a></li>
+		</ul>
+
+		<ul class="ml-nav-buttons">
+			<div class="btn">
+				<a href="https://via.eviivo.com/RossendaleHldyCtgBB4"><span>Book Now</span></a>
+			</div>
+
+			<div class="contact-icon contact-icon-active">
+				<a href="../pages/contact.html"><h3>&#9743;</h3></a>
+			</div>
+		</ul>
+
+	</div>
+
+	<nav class="global-nav">
+		<div class="inner">
+
+			<a href="../index.html">
+				<div class="logo">
+					<div class="logo-inner">
+						<img src="../img/_icons/alder_icon.svg">
+						<img src="../img/_icons/willow_icon.svg">
+						<img src="../img/_icons/oak_icon.svg">
+					</div>
+					<h3>Home</h3>
+				</div>
+			</a>
+
+			<div class="mob-nav">
+				<div class="mob-nav-inner">
+					<a id="mob-nav">
+						<h3>&#9783;</h3>
+					</a>
+				</div>
+			</div>
+
+			<div class="nav-buttons">
+				<div class="btn">
+					<a href="https://via.eviivo.com/RossendaleHldyCtgBB4"><span>Book Now</span></a>
+				</div>
+
+				<div class="contact-icon contact-icon-active">
+					<a href="../pages/contact.html"><h3>&#9743;</h3></a>
+				</div>
+			</div>
+
+			<ul class="ul-nav-bar">
+				<div class="nav-list">
+					<li><a href="../pages/cottages.html">Cottages</a></li>
+					<li><a href="../pages/rooms.html">Rooms</a></li>
+					<li><a href="../pages/glamping.html">Glamping</a></li>
+					<li><a href="../pages/leisure-events.html">Leisure &amp; Events</a></li>
+					<li><a href="../pages/reviews.html">Reviews</a></li>
+					<li><a href="../pages/blog.html">Blog</a></li>
+				</div>
+			</ul>
+
+		</div>
+	</nav>
+<!-- -->
+
+	<div class="page-body">
+
+		<div id="contact-wrapper" class="first-section-wrapper">
+				<div class="contact-section">
+
+					<div class="global-desc">
+						<h1>Contact Us</h1>
+						<p>Come and Find Us</p>
+					</div>
+
+					<div id="map"\></div>
+
+					<script>
+			      function initMap() 
+			      {
+			        var uluru = 
+			        {
+			        	lat: 53.729277, lng: -2.234419
+			        };
+			        var map = new google.maps.Map(document.getElementById('map'), 
+			        {
+
+			        	zoom: 17,
+			          center: uluru,
+			          styles: [
+
+						      {
+						      	elementType: 'geometry', stylers: [
+						      	{
+						      		color: '#ffffff'
+						      	}]
+						      },
+						      {
+						      	elementType: 'labels.text.stroke', stylers: [
+						      	{
+						      		color: '#242f3e'
+						      	}]
+						      },
+						      {
+						      	elementType: 'labels.text.fill', stylers: [
+						      	{
+						      		color: '#746855'
+						      	}]
+						      },
+						      {
+						        featureType: 'administrative.locality',
+						        elementType: 'labels.text.fill',
+						        stylers: [{color: '#ffffff'}]
+						      },
+						      {
+						        featureType: 'poi',
+						        elementType: 'labels.text.fill',
+						        stylers: [{color: '#ffffff'}]
+						      },
+						      {
+						        featureType: 'poi.park',
+						        elementType: 'geometry',
+						        stylers: [{color: '#4c3534'}]
+						      },
+						      {
+						        featureType: 'poi.park',
+						        elementType: 'labels.text.fill',
+						        stylers: [{color: '#ffffff'}]
+						      },
+						      {
+						        featureType: 'road',
+						        elementType: 'geometry',
+						        stylers: [{color: '#322322'}]
+						      },
+						      {
+						        featureType: 'road',
+						        elementType: 'geometry.stroke',
+						        stylers: [{color: '#322322'}]
+						      },
+						      {
+						        featureType: 'road',
+						        elementType: 'labels.text.fill',
+						        stylers: [{color: '#ffffff'}]
+						      },
+						      {
+						        featureType: 'road.highway',
+						        elementType: 'geometry',
+						        stylers: [{color: '#322322'}]
+						      },
+						      {
+						        featureType: 'road.highway',
+						        elementType: 'geometry.stroke',
+						        stylers: [{color: '#322322'}]
+						      },
+						      {
+						        featureType: 'road.highway',
+						        elementType: 'labels.text.fill',
+						        stylers: [{color: '#322322'}]
+						      },
+						      {
+						        featureType: 'transit',
+						        elementType: 'geometry',
+						        stylers: [{color: '#4c3534'}]
+						      },
+						      {
+						        featureType: 'transit.station',
+						        elementType: 'labels.text.fill',
+						        stylers: [{color: '#ffffff'}]
+						      },
+						      {
+						        featureType: 'water',
+						        elementType: 'geometry',
+						        stylers: [{color: '#4c3534'}]
+						      },
+						      {
+						        featureType: 'water',
+						        elementType: 'labels.text.fill',
+						        stylers: [{color: '#ffffff'}]
+						      },
+						      {
+						        featureType: 'water',
+						        elementType: 'labels.text.stroke',
+						        stylers: [{color: '#17263c'}]
+						      }
+						    ]
+
+			        });
+			        var marker = new google.maps.Marker(
+			        {
+			          position: uluru,
+			          map: map
+			        });
+			      }
+			    </script>
+			    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDRFXAQH7RFHDsJiG2MSN72bZOAbHiTaKU&callback=initMap">
+			    </script>
+
+					<ul id="contact-info" class="top-marg">
+						<li>01706 534364</li>
+						<li>Rossendale Holiday Cottages, <br> Dean Lane, Water, Rossendale <br> BB4 9RA</li>
+						<li>stay@rossendaleholidays.co.uk</li>
+					</ul>
+
+					<div class="row bot-marg">
+						<br>
+						<h2>Send a Message or Book a Room/Event</h2>
+
+						<div id="contact-form-wrapper">
+							<form action="../php/mail.php" method="POST" name="contact-form">
+							<div class="form-group">
+								<input placeholder="Name" type="text" name="name" class="form-control">
+							</div>
+							<div class="form-group">
+								<input placeholder="Email" type="text" name="email" class="form-control">
+							</div>
+							<div class="form-group">
+								<input placeholder="Phone" type="text" name="phone" class="form-control">
+							</div>
+							<br>
+							<p>Subscribe to Our Newsletter?</p>
+							<div id="form-group-check_sub">
+									
+									<div class="checkbox">
+										<input type="checkbox" value="I WOULD like to subscribe to your newsletter." name="news" id="checkboxInput">
+										<label for="checkboxInput"></label>
+										<p>Yes</p>
+									</div>
+									<div class="checkbox">
+										<input type="checkbox" value="Do NOT add my email to your subscription list." name="news" id="checkboxInput2">
+										<label for="checkboxInput2"></label>
+										<p>No</p>
+								</div>
+							</div>
+							<br>
+							<div class="form-group">
+								<textarea placeholder="Leave a Message" name="message" value="message" class="form-control" rows="6" cols="25"></textarea><br>
+								<input type="submit" name="submit" value="Send" class="form-control-btn"><input type="reset" value="Clear" class="form-control-btn">
+							</div>
+							</form>
+							<script language="JavaScript">
+							var frmvalidator  = new Validator("contact-form");
+							frmvalidator.addValidation("name","req","Please provide your name."); 
+							frmvalidator.addValidation("email","req","Please provide your email address."); 
+							frmvalidator.addValidation("email","email","Please enter a valid email address."); 
+							</script>
+						</div>
+					</div>
+
+			</div>
+		</div>
+
+	</div>
+
+	<div class="footer-wrapper">
+		<div class="footer">
+			<div class="row">
+
+				<div class="footer-container">
+					<ul class="footer-payment">
+						<h3>We Accept</h3>
+						<li><img src="../img/_icons/visa_icon.png" class="payment-icon"></li>
+						<li><img src="../img/_icons/mastercard_icon.png" class="payment-icon"></li>
+						<li><img src="../img/_icons/americanexpress_icon.png" class="payment-icon"></li>
+					</ul>
+				</div>
+
+				<div class="footer-container">
+					<div class="footer-contact">
+						<h3>Contact Us</h3>
+						<div class="contact-icon">
+							<a href="../pages/contact.html"><h3>&#9743;</h3></a>
+						</div>
+					</div>
+
+					<div class="footer-subscribe">
+						<div class="footer-subscribe-inner">
+
+							<div class="subscribe_pop-up" id="subscribe_pop-up">
+							
+							<!--	<div class="tail"><div class="tail2">
+								</div></div>
+							-->
+
+								<div class="subscribe_pop-up_inner">
+									<h3>Sign Up to our Newsletter</h3>
+									<form action="../php/subscribe.php" method="POST" name="subscribe-form">
+										<div class="pop-up-group">
+											<input placeholder="Name" type="text" name="name" class="pop-up-control">
+										</div>
+										<div class="pop-up-group">
+											<input placeholder="Email" type="text" name="email" class="pop-up-control">
+										</div>
+										<div class="pop-up-group">
+											<input type="submit" name="submit" value="SEND" class="pop-up-control-btn">
+										</div>
+									</form>
+									<script language="JavaScript">
+									var frmvalidator  = new Validator("subscribe-form");
+									frmvalidator.addValidation("name","req","Please provide your name."); 
+									frmvalidator.addValidation("email","req","Please provide your email address."); 
+									frmvalidator.addValidation("email","email","Please enter a valid email address."); 
+									</script>
+								</div>
+							</div>
+
+						<!--	<a id="subscribe">
+								<h3>Subscribe to Our Newsletter</h3>
+							</a> -->
+
+						</div>
+					</div>
+
+				</div>
+
+				<div class="footer-container">
+					<ul class="footer-social">
+						<h3>@ 2017 Rossendale Holidays</h3>
+						<li><a href="https://www.facebook.com/rossendaleholidays/"><img src="../img/_icons/facebook_icon.svg" class="social-icon"></a></li>
+						<li><a href="https://twitter.com/stayonthetrail"><img src="../img/_icons/twitter_icon.svg" class="social-icon"></a></li>
+						<li><a href="https://www.instagram.com/rossendaleholidays"/><img src="../img/_icons/insta_icon.svg" class="social-icon"></a></li>
+					</ul>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	
+</body>
