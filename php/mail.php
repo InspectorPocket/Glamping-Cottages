@@ -24,14 +24,14 @@ if(IsInjected($visitor_email))
     exit;
 }
 
-$email_from = 'stay@rossendaleholidays.co.uk';//<== update the email address
+$email_from = '';//<== update the email address
 $email_subject = "Message From Website: Contact Page";
 $email_body = "From: $name \nEmail: $visitor_email \nPhone Number: $phone\n\n$news\n\n". 
     "$message \n\n".
     "Emailed to: \n".
     
-$to = "stay@rossendaleholidays.co.uk";//<== update the email address
-$headers = 'From: ' . $_POST['name'] . ' <stay@rossendaleholidays.co.uk>' . "\r\n" .
+$to = "";//<== update the email address
+$headers = 'From: ' . $_POST['name'] . ' <>' . "\r\n" .
     "Reply-To: $visitor_email \r\n" .
     'X-Mailer: PHP/' . phpversion();
 //Send the email!
